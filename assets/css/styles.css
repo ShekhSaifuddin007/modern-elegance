@@ -445,6 +445,24 @@ header {
 	padding-left: 0 !important;
 }
 
+.blog-info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	margin-top: 15px;
+}
+
+.blog-info span {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.blog-info div {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 34px;
+}
+
 /* modifier classes */
 header.header-bg {
 	background-color: #fff;
