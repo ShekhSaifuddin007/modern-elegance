@@ -469,6 +469,132 @@ header {
 }
 
 /* branch section */
+.branch-section .map-wrap {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.branch-section .map {
+	width: 501px;
+}
+
+.map .marker {
+	position: absolute;
+	cursor: pointer;
+}
+
+.map .sirajgonj {
+	left: 145px;
+	top: 265px;
+}
+
+.map .tangail {
+	left: 195px;
+    top: 275px;
+}
+
+.map .kishoreganj {
+	left: 295px;
+	top: 265px;
+}
+
+.map .marker.dhaka {
+	position: unset;
+}
+
+.map .jessor {
+	left: 105px;
+	bottom: 285px;
+}
+
+.map .chandpur {
+	right: 185px;
+	bottom: 300px;
+}
+
+.map .comilla {
+	right: 160px;
+	bottom: 330px;
+}
+
+.dhaka-wrap {
+	width: max-content;
+	top: 330px;
+	left: 230px;
+	z-index: 1;
+}
+
+.location-dtl {
+	opacity: 0;
+	visibility: hidden;
+	top: 35px;
+	left: 20px;
+	width: 328px;
+	height: 538px;
+	padding: 20px;
+	background-color: #f0f0f0;
+	transition: opacity 250ms ease-in-out;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.map .dhaka-wrap:hover .location-dtl {
+	opacity: 1;
+	visibility: visible;
+}
+
+.district {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.district .district-name {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.locations {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+
+.locations .location {
+	padding: 20px;
+	background-color: #fff;
+}
+
+.location .location-name {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.location-info {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	row-gap: 10px;
+}
+
+.location-info .info {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 10px;
+}
+
+.location-info .info .dtl {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
 
 /* footer */
 .footer {

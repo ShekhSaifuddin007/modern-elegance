@@ -5,8 +5,10 @@ $(document).ready(() => {
 	function setSlide(index) {
 		navItems.removeClass("selected");
 		navItems.eq(index).addClass("selected");
-		$(".hero-section .slide").fadeOut({queue: false, duration: 'slow'});
-		$(".hero-section .slide").eq(index).fadeIn({queue: false, duration: 'slow'});
+		$(".hero-section .slide").fadeOut({ queue: false, duration: "slow" });
+		$(".hero-section .slide")
+			.eq(index)
+			.fadeIn({ queue: false, duration: "slow" });
 	}
 
 	$(".hero-section .nav li").click(function () {
@@ -44,4 +46,28 @@ $(document).ready(() => {
 
 			$("#header").removeClass("header-bg");
 		});
+
+	var aboutCarousel = $(".about-section .owl-carousel");
+	aboutCarousel.owlCarousel({
+		items: 1,
+		loop: true,
+		dots: false,
+		autoplay: true,
+	});
+
+	// Go to the next item
+	$(".carousel-content .control").click(function () {
+		aboutCarousel.trigger("next.owl.carousel");
+	});
+
+	$(".blog-section .owl-carousel").owlCarousel({
+		stagePadding: 50,
+		margin: 30,
+	});
+
+	$("#locations").slimScroll({
+		height: "calc(538px - 90px)",
+		distance: "-3px",
+		alwaysVisible: true,
+	});
 });
