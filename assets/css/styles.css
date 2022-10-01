@@ -421,6 +421,7 @@ header {
 }
 
 .project .second {
+	cursor: pointer;
 	top: 576px;
 	right: 685px;
 	transition: top 300ms ease-in-out;
