@@ -8,7 +8,7 @@
 body {
 	font-family: "Red Hat Display", sans-serif;
 	font-size: 16px;
-	background-color: #fff;
+	background-color: #f5f5f5;
 	overflow-x: hidden;
 }
 
@@ -281,6 +281,9 @@ header {
 }
 
 /* About section */
+.about-section {
+	background-color: #fff;
+}
 .about-heading {
 	width: 100%;
 	max-width: 650px;
@@ -424,6 +427,9 @@ header {
 }
 
 /* blog section */
+.blog-section {
+	background-color: #fff;
+}
 .blog-content .blog-btn {
 	position: absolute;
 	top: 50%;
@@ -513,4 +519,12 @@ header.header-bg .drop-menu {
 }
 .mt-5 {
 	margin-top: 5rem;
+}
+
+.pdt-5 {
+	padding-top: 5rem;
+}
+
+.pdb-3 {
+	padding-bottom: 3rem;
 }
