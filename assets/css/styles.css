@@ -386,6 +386,7 @@ header {
 .project-section {
 	background-color: #5c5c5c;
 	padding: 80px 0;
+	overflow: hidden;
 }
 
 .project-section .projects {
@@ -395,13 +396,7 @@ header {
 	flex-wrap: wrap;
 }
 
-/* .projects .project-divider {
-	width: 2px;
-	height: 350px;
-	background-color: #646464;
-} */
-
-.projects .project:not(:last-child) {
+.projects .project:not(:last-child) .first {
 	border-right: 2px solid #646464;
 	padding-right: 126px;
 }
@@ -423,6 +418,56 @@ header {
 	color: #ffffff;
 	bottom: 30px;
 	left: -40px;
+}
+
+.project .second {
+	top: 576px;
+	right: 685px;
+	transition: top 300ms ease-in-out;
+}
+
+.desc-wrap {
+	width: 540px;
+	background-color: #393939;
+	color: #fff;
+}
+
+.desc-wrap .head {
+	font-style: normal;
+	padding: 27px 27px 0;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 34px;
+	margin-bottom: 16px;
+}
+
+.desc-wrap .desc {
+	font-size: 15px;
+	padding: 0 27px;
+	line-height: 150%;
+	opacity: 0.7;
+	margin-bottom: 31px;
+}
+
+.desc-wrap .contact {
+	height: 90px;
+	padding: 15px 27px 0;
+}
+
+.s-img-btn {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	width: 64px;
+	height: 64px;
+	background: #ea4715;
+	border-radius: 50%;
+	color: #fff;
+	border: none;
+	outline: none;
+	line-height: 32px;
 }
 
 /* blog section */
@@ -492,7 +537,7 @@ header {
 
 .map .tangail {
 	left: 195px;
-    top: 275px;
+	top: 275px;
 }
 
 .map .kishoreganj {

@@ -70,4 +70,16 @@ $(document).ready(() => {
 		distance: "-3px",
 		alwaysVisible: true,
 	});
+
+	$(document)
+		.on("mouseenter", ".project-section #second-project", function () {
+			$("#second-project .second").css({
+				top: "0px",
+			});
+		})
+		.on("mouseleave", ".project-section #second-project", function () {
+			$("#second-project .second").css({
+				top: "576px",
+			});
+		});
 });
