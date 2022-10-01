@@ -5,8 +5,8 @@ $(document).ready(() => {
 	function setSlide(index) {
 		navItems.removeClass("selected");
 		navItems.eq(index).addClass("selected");
-		$(".hero-section .slide").css("display", "none");
-		$(".hero-section .slide").eq(index).css("display", "block");
+		$(".hero-section .slide").fadeOut({queue: false, duration: 'slow'});
+		$(".hero-section .slide").eq(index).fadeIn({queue: false, duration: 'slow'});
 	}
 
 	$(".hero-section .nav li").click(function () {

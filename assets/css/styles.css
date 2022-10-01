@@ -241,7 +241,6 @@ header {
 	border-radius: 50%;
 	justify-self: center;
 	background: #ffffff;
-	transform: rotate(-90deg);
 	cursor: pointer;
 }
 
@@ -402,10 +401,10 @@ header {
 	background-color: #646464;
 } */
 
-/* .projects .project:not(:last-child) {
+.projects .project:not(:last-child) {
 	border-right: 2px solid #646464;
 	padding-right: 126px;
-} */
+}
 
 .project-heading {
 	font-weight: 400;
